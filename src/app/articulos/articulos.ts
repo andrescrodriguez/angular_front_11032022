@@ -1,8 +1,13 @@
-export interface articulosDTO{
-    Id: number;
-    Titulo: string;
-    PreLectura: string;
-    Contenido: string;
-    NombreDeRuta: string;
+export interface Articulo{
+    id: number;
+    titulo: string;
+    nombreDeRuta: string;
+    categoriaNombre: string;
+    fechaHoraPublicacion: Date;
+    fechaHoraAlta: Date;
+    fechaHoraUltimaActualizacion: Date;
+    preLectura: string;
+    contenido: string;
+    fechaHoraBaja: Date;
+    imagenRuta: string;
 }
-

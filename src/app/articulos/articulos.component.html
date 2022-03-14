@@ -7,10 +7,8 @@
 <ng-container *ngIf="articulos.length > 0">
     <div *ngFor="let articulo of articulos">
         <div>
-            {{articulo.Titulo}} - {{articulo.PreLectura}} 
-            <br/>
-            {{articulo.Contenido}}
-            <button (click)="redireccionar(articulo.Id)">Leer</button>
+            {{articulo.titulo}} - {{articulo.preLectura}} 
+            <button (click)="redireccionar(articulo.id)">Leer</button>
         </div>
     </div>
 </ng-container>
