@@ -5,10 +5,16 @@
 </ng-container>
 
 <ng-container *ngIf="articulos.length > 0">
+    
     <div *ngFor="let articulo of articulos">
         <div>
             {{articulo.titulo}} - {{articulo.preLectura}} 
             <button (click)="redireccionar(articulo.id)">Leer</button>
         </div>
     </div>
+
+    <button (click)="anterior()" [disabled]="paginaActual === 1"><</button>
+    <button *ngFor="let pagina of cantidadDePaginasArr">{{pagina}}</button>
+    <button (click)="siguiente()" [disabled]="paginaActual === cantidadDePaginas">></button>
+
 </ng-container>
