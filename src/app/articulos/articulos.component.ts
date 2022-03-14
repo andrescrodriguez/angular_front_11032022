@@ -62,6 +62,11 @@ export class ArticulosComponent implements OnInit {
     }
   }
 
+  seleccion(pagina: number) {
+    this.paginaActual = pagina;
+    this.getAll(this.paginaActual, this.cantidadDeRegistrosAMostrar);
+  }
+
   redireccionar(id: number) {
      const articulo = this.articulos.find(x => x?.id == id);
      console.log(articulo?.nombreDeRuta);

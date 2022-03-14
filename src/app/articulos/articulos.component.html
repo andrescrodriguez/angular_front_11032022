@@ -14,7 +14,7 @@
     </div>
 
     <button (click)="anterior()" [disabled]="paginaActual === 1"><</button>
-    <button *ngFor="let pagina of cantidadDePaginasArr">{{pagina}}</button>
+    <button *ngFor="let pagina of cantidadDePaginasArr" (click)="seleccion(pagina)">{{pagina}}</button>
     <button (click)="siguiente()" [disabled]="paginaActual === cantidadDePaginas">></button>
 
 </ng-container>
