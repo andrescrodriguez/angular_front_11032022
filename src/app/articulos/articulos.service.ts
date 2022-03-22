@@ -20,8 +20,6 @@ export class ArticulosService {
     return this.http.get<Articulo[]>(this.apiURL + '/getAll', {observe: 'response', params}); 
   }
 
-  public getById(id: number) : Observable<Articulo[]> {
-    return this.http.get<Articulo[]>(this.apiURL + '/getById/' + id);
-  }
+  
 
 }

@@ -1,1 +1,17 @@
-<p>articulo works!</p>
+
+<h1 *ngIf="articuloTitulo">
+    {{articuloTitulo}}
+</h1>
+
+<h2 *ngIf="articuloPreLectura" [innerHTML]="articuloPreLectura">
+
+</h2>
+
+<div *ngIf="articuloContenido" [innerHTML]="articuloContenido">
+
+</div>
+
+<div *ngIf="categoriaNombre">
+    {{categoriaNombre}}
+</div>
+

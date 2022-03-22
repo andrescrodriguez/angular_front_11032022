@@ -69,7 +69,7 @@ export class ArticulosComponent implements OnInit {
 
   redireccionar(id: number) {
      const articulo = this.articulos.find(x => x?.id == id);
-     console.log(articulo?.nombreDeRuta);
-     this.router.navigate(['/articulo/' + articulo?.nombreDeRuta]);
+     console.log(articulo);
+     this.router.navigate(['/articulo/' + articulo?.categoriaNombreDeRuta + '/' + articulo?.nombreDeRuta]);
   }
 }
